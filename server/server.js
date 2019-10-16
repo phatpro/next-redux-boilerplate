@@ -6,7 +6,7 @@ for (var i = 0; i < lines; i++) {
 
 require('colors');
 const argv = require('minimist')(process.argv.slice(2));
-console.log('Nạp argv', argv);
+console.log('Load argv', argv);
 
 const express = require('express');
 const app = express();
