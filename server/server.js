@@ -28,6 +28,14 @@ nextApp
 			return nextApp.render(req, res, '/home');
 		});
 
+		app.get('/trang-1', (req, res) => {
+			return nextApp.render(req, res, '/page-1');
+		});
+
+		app.get('/trang-2', (req, res) => {
+			return nextApp.render(req, res, '/page-2');
+		});
+
 		app.get('*', (req, res) => {
 			return nextAppHandler(req, res);
 		});

@@ -8,6 +8,7 @@ import withReduxStore from '../lib/withReduxStore';
 import { Provider } from 'react-redux';
 
 // components
+import Layout from '../components/Layout';
 
 class App extends NextApp {
 	componentDidMount() {
@@ -23,7 +24,9 @@ class App extends NextApp {
 
 		return (
 			<Provider store={reduxStore}>
-				<Component {...pageProps} />
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
 			</Provider>
 		);
 	}

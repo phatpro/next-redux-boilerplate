@@ -1,6 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import Head from 'next/head';
 
 export default function Home() {
-	return <div>Home page</div>;
+	return (
+		<div>
+			<Head>
+				<title>next-redux-boilerplate - Home page</title>
+			</Head>
+			Home page
+		</div>
+	);
 }
